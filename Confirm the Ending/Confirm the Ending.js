@@ -7,6 +7,12 @@ function confirmEnding(str, target) {
 
 confirmEnding("Bastian", "n");
 
+function confirmEnding(str, target) {
+    return str.substring(str.lastIndexOf(target), str.length)
+}
+
+confirmEnding("Bastian", "n");
+
 // Solution 2
 function confirmEnding(str, target) {
     return str.slice(str.length - target.length) === target;
